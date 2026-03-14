@@ -6,7 +6,7 @@ Planned
 ## Goal
 Identify the root cause of the 502 error, apply a fix, and explain how to prevent it in production.
 
-```# docker-compose.yml
+``` docker-compose.yml
 version: '3'
 services:
  web:
@@ -33,7 +33,7 @@ server {
 const express = require('express');
 const app = express();
 const PORT = 3000;
-...
+
 ```
 
 ## Notes
