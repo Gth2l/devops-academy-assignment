@@ -11,9 +11,8 @@ Identify the root cause of the 502 error, apply a fix, and explain how to preven
 version: '3'
 services:
  web:
- build: .
- ports:
-1
+ build:.
+ ports:1
  - "3000:3000"
  nginx:
  image: nginx:alpine
