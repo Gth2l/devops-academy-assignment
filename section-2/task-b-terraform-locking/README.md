@@ -81,7 +81,7 @@ terraform {
 ### Why this is better
 
 - `use_lockfile = true` adds safer locking for the S3 backend
-- `required_version` makes the Terraform version clear
+- `required_version` makes the Terraform version clear (I added required_version = "~> 1.14" more as a best practice than as a direct fix for the locking error. The ~> 1.14 syntax means the configuration expects Terraform from the 1.14.x line; a newer incompatible major/minor line would not pass.)
 - the backend is better prepared for team collaboration
 
 I would also add:
