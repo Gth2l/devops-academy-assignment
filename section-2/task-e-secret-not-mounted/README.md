@@ -36,8 +36,8 @@ data:
 
 The issue described in the task is that `DB_PASSWORD` is missing at runtime.
 
----
-Root cause
+
+---Root cause---
 The most likely root cause is that the application and the Secret are not available in the same namespace, or the Secret has not been created in the namespace where the Pod is running.
 In Kubernetes, a Pod can only reference a Secret from the same namespace.
 So even if `db-secret` exists, the environment variable will still be missing if:
@@ -48,7 +48,7 @@ Another possible issue is a mismatch in:
 Secret name,
 key name,
 or the resource was applied in the wrong order.
----
+
 How I would debug it safely
 The task explicitly says to debug it without printing the secret in logs, so I would only verify metadata and resource existence.
 1. Check which namespace the Pod is running in
@@ -87,6 +87,7 @@ printenv | grep DB_PASSWORD
 This confirms whether the variable is present, but the secret value itself should not be copied into logs, screenshots, or documentation.
 ---
 Fix
+---
 The correct fix is to make sure that:
 the Deployment and Secret are in the same namespace,
 the Secret name matches `db-secret`,
@@ -132,13 +133,14 @@ spec:
 ```
 ---
 Why this works
+---
 Kubernetes resolves `secretKeyRef` only inside the same namespace as the Pod.
 After placing both resources in the same namespace and making sure the Secret name and key are correct:
 the Pod can read the Secret,
 `DB_PASSWORD` is injected into the container environment,
 and the application can access it at runtime.
----
-Prevention
+
+---Prevention---
 To avoid this problem in production, I would use these practices:
 1. Always define namespaces explicitly
 Do not rely on the default namespace by accident.
