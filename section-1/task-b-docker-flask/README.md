@@ -38,9 +38,12 @@ curl http://localhost:5000
 curl http://localhost:5000/healthz
 ```
 Expected responses:
-
+```
 {"message":"Flask app is running inside Docker","status":"ok"}
+```
+```
 {"status":"healthy"}
+```
 
 Port Exposure
 The application runs on port 5000 inside the container.
