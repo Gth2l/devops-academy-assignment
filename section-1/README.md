@@ -4,9 +4,9 @@ This section contains the implementation part of the DevOps Academy assignment.
 
 ## Tasks
 
-⚪ `task-a-terraform-vpc/` – Terraform-managed AWS VPC
-✅ `task-b-docker-flask/` – Dockerized Python Flask application
-🟡 `task-c-kubernetes-helm/` – Kubernetes app deployment with Helm
+- ⚪ `task-a-terraform-vpc/` – Terraform-managed AWS VPC
+- ✅ `task-b-docker-flask/` – Dockerized Python Flask application
+- 🟡 `task-c-kubernetes-helm/` – Kubernetes app deployment with Helm
 
 
 ## Notes
