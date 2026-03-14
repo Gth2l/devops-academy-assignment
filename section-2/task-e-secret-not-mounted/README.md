@@ -168,6 +168,7 @@ deployment order
 Never print decoded secret values to logs, screenshots, or README output.
 ---
 Final answer
+---
 `DB_PASSWORD` is missing at runtime because the Pod cannot resolve the referenced Secret correctly.
 The most likely reason is a namespace mismatch or a missing Secret resource.
 The fix is to ensure that:
