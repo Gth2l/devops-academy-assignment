@@ -11,17 +11,20 @@ The objective of this section is to demonstrate:
 - verification of the fix,
 - prevention recommendations.
 
-## Available Tasks
+## Available Tasks and status
 
--✅ `task-a/` – 502 Bad Gateway (Nginx + Node.js) - DONE
+-✅ `task-a/` – 502 Bad Gateway (Nginx + Node.js) 
 
--✅ `task-b/` – Terraform Error: Error locking state - DONE
+-✅ `task-b/` – Terraform Error: Error locking state 
 
 -⚪ `task-c/` – Docker Build Fails (`no space left on device`)
 
 -⚪ `task-d/` – Pod in CrashLoopBackOff (Node.js App)
 
--✅ `task-e/` – Secret Not Mounted as ENV (Kubernetes) - DONE
+-✅ `task-e/` – Secret Not Mounted as ENV (Kubernetes)
+
+✅ Done 🟡 In Progress ⚪ Not Selected Yet
+
 
 ## Recommended Troubleshooting Structure
 
