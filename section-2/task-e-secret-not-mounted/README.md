@@ -37,7 +37,8 @@ data:
 The issue described in the task is that `DB_PASSWORD` is missing at runtime.
 
 
----Root cause---
+---Root cause
+
 The most likely root cause is that the application and the Secret are not available in the same namespace, or the Secret has not been created in the namespace where the Pod is running.
 In Kubernetes, a Pod can only reference a Secret from the same namespace.
 So even if `db-secret` exists, the environment variable will still be missing if:
@@ -85,9 +86,10 @@ kubectl exec -it <pod-name> -n <namespace> -- /bin/sh
 printenv | grep DB_PASSWORD
 ```
 This confirms whether the variable is present, but the secret value itself should not be copied into logs, screenshots, or documentation.
+
 ---
 Fix
----
+
 The correct fix is to make sure that:
 the Deployment and Secret are in the same namespace,
 the Secret name matches `db-secret`,
