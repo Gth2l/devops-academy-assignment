@@ -6,11 +6,11 @@ This section contains reasoning-based tasks focused on incident response, debugg
 
 According to the assignment, Section 3 is intended to simulate production issues and describe a structured approach to solving them.
 
-## Available Tasks
+## Available Tasks and status ✅ Done 🟡 In Progress ⚪ Not Selected Yet
 
-- `task-a/` – Production went down
-- `task-b/` – CI/CD pipeline is stuck
-- `task-c/` – Terraform shows large infrastructure diff unexpectedly
+-✅ `task-a/` – Production went down
+-⚪ `task-b/` – CI/CD pipeline is stuck
+-⚪ `task-c/` – Terraform shows large infrastructure diff unexpectedly
 
 ## Selected Task
 
