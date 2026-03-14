@@ -59,9 +59,7 @@ terraform plan
 
 The safer long-term fix is to improve the backend configuration.
 
-### Základná odporúčaná konfigurácia je:
-
-![Terraform backend diff](./task-b-backend-diff.png)
+### The basic recommended configuration is:
 
 Updated example:
 
@@ -77,6 +75,8 @@ terraform {
   required_version = "~> 1.14"
 }
 ```
+![Terraform backend diff](./task-b-backend-diff.png)
+
 
 ### Why this is better
 
