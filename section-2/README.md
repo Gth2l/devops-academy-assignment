@@ -14,6 +14,7 @@ The objective of this section is to demonstrate:
 ## Available Tasks
 
 -✅ `task-a/` – 502 Bad Gateway (Nginx + Node.js) - DONE
+
 -✅ `task-b/` – Terraform Error: Error locking state - DONE
 -⚪ `task-c/` – Docker Build Fails (`no space left on device`)
 -⚪ `task-d/` – Pod in CrashLoopBackOff (Node.js App)
