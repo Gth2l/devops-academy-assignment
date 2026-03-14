@@ -1,0 +1,6 @@
+services:
+  web:
+    build: .
+    container_name: flask-docker-app
+    ports:
+      - "5000:5000"
