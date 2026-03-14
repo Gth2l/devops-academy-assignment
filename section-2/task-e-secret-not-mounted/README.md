@@ -89,7 +89,7 @@ This confirms whether the variable is present, but the secret value itself shoul
 
 ---
 Fix
-
+---
 The correct fix is to make sure that:
 the Deployment and Secret are in the same namespace,
 the Secret name matches `db-secret`,
@@ -142,7 +142,9 @@ the Pod can read the Secret,
 `DB_PASSWORD` is injected into the container environment,
 and the application can access it at runtime.
 
----Prevention---
+---
+Prevention
+---
 To avoid this problem in production, I would use these practices:
 1. Always define namespaces explicitly
 Do not rely on the default namespace by accident.
