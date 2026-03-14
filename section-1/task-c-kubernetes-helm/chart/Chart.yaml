@@ -1,0 +1,6 @@
+apiVersion: v2
+name: nginx-web
+description: Placeholder Helm chart for Kubernetes deployment task
+type: application
+version: 0.1.0
+appVersion: "1.0.0"

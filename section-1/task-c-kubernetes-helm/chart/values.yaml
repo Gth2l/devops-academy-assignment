@@ -1,0 +1,20 @@
+# Placeholder values for Helm deployment
+replicaCount: 1
+
+image:
+  repository: nginx
+  tag: stable
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: true
+  className: nginx
+  hosts:
+    - host: nginx.local
+      paths:
+        - path: /
+          pathType: Prefix
