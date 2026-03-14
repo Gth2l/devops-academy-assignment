@@ -67,7 +67,8 @@ Why this works
 The Node.js app listens on port 3000.
 So Nginx also has to forward traffic to port 3000.
 After changing:
-```server {
+```
+server {
   listen 80;
 
   location / {
