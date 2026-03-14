@@ -11,7 +11,7 @@ The objective of this section is to demonstrate:
 - verification of the fix,
 - prevention recommendations.
 
-## Available Tasks and status
+## Available Tasks and status   ✅ Done 🟡 In Progress ⚪ Not Selected Yet
 
 -✅ `task-a/` – 502 Bad Gateway (Nginx + Node.js) 
 
@@ -23,7 +23,7 @@ The objective of this section is to demonstrate:
 
 -✅ `task-e/` – Secret Not Mounted as ENV (Kubernetes)
 
-✅ Done 🟡 In Progress ⚪ Not Selected Yet
+
 
 
 ## Recommended Troubleshooting Structure
