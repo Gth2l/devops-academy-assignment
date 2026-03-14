@@ -33,7 +33,9 @@ type: Opaque
 data:
   password: c2VjcmV0cGFzcw==
 ```
+
 The issue described in the task is that `DB_PASSWORD` is missing at runtime.
+
 ---
 Root cause
 The most likely root cause is that the application and the Secret are not available in the same namespace, or the Secret has not been created in the namespace where the Pod is running.
