@@ -12,7 +12,7 @@ version: '3'
 services:
  web:
  build:.
- ports:1
+ ports:
  - "3000:3000"
  nginx:
  image: nginx:alpine
