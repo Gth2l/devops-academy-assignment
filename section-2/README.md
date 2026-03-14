@@ -1,22 +1,39 @@
 # Section 2 – Troubleshooting
 
-This section is reserved for troubleshooting tasks where the goal is to identify, explain, and fix broken code, configuration, or infrastructure.
+Táto sekcia obsahuje troubleshooting úlohy zamerané na hľadanie a opravu problémov v konfigurácii, infraštruktúre a runtime správaní aplikácií.
 
-## Available Tasks
+## Tasks in this section
 
-- `task-a/`
-- `task-b/`
-- `task-c/`
+### Task A – 502 Bad Gateway (Nginx + Node.js)
+Cieľom je nájsť príčinu chyby 502, opraviť konfiguráciu a vysvetliť, ako podobnému problému predísť v produkcii.
 
-## Recommended Structure for the Selected Task
+### Task B – Terraform Error: Error locking state
+Cieľom je vysvetliť locking error v Terraforme, navrhnúť short-term a long-term fix a popísať bezpečný workflow pre tím.
 
-The selected task solution should usually contain:
-- problem summary,
+### Task C – Docker Build Fails (no space left on device)
+Cieľom je diagnostikovať problém s nedostatkom miesta počas CI buildu, navrhnúť dočasné aj trvalé riešenie a doplniť monitoring.
+
+### Task D – Pod in CrashLoopBackOff
+Cieľom je zistiť, prečo sa Kubernetes pod opakovane reštartuje, ako odhaliť root cause cez logy a probes a aké zlepšenia odporučiť.
+
+### Task E – Secret Not Mounted as ENV
+Cieľom je zistiť, prečo premenná z Kubernetes Secret nie je dostupná za behu aplikácie, a opraviť mismatch v namespace alebo chýbajúci resource.
+
+## Folder structure
+
+Každý task má vlastný priečinok s vlastným `README.md`, kde bude:
+- popis problému,
 - root cause analysis,
-- fix applied,
-- verification steps,
-- short conclusion.
+- návrh riešenia,
+- prípadne obrázky, výstupy alebo poznámky.
 
-## Status
+## Current status
 
-Placeholder structure prepared.
+Completed:
+- Task B – Terraform Error: Error locking state
+
+In progress / pending:
+- Task A
+- Task C
+- Task D
+- Task E

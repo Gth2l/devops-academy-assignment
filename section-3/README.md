@@ -1,22 +1,29 @@
 # Section 3 – Thought Process
 
-This section is reserved for reasoning-oriented tasks, including technical explanation, trade-off analysis, and incident-style thinking.
+Táto sekcia obsahuje scenario-based úlohy zamerané na reasoning, incident handling a rozhodovanie v produkčných situáciách.
 
-## Available Tasks
+## Tasks in this section
 
-- `task-a/`
-- `task-b/`
-- `task-c/`
+### Task A – Production went down
+Popíš prvé kroky, ktoré by si urobil, keď aplikácia v produkcii prestane fungovať.
 
-## Recommended Structure for the Selected Task
+### Task B – CI/CD pipeline is stuck
+Popíš, ako by si debugoval pipeline, ktorá visí viac než 30 minút, ktoré logy by si kontroloval a ako by si pipeline odblokoval.
 
-The selected task solution should usually contain:
-- situation summary,
-- assumptions,
-- reasoning process,
-- options considered,
-- final recommendation or response.
+### Task C – Terraform shows large infrastructure diff unexpectedly
+Popíš, čo by si urobil pred schválením alebo aplikovaním Terraform plánu, ktorý ukazuje nečakane veľké zmeny.
 
-## Status
+## Expected approach
 
-Placeholder structure prepared.
+Pri každom tasku bude samostatný `README.md`, kde bude:
+- postup vyšetrovania,
+- krok za krokom reasoning,
+- identifikácia rizík,
+- odporúčaný ďalší postup.
+
+## Current status
+
+Planned:
+- Task A
+- Task B
+- Task C
